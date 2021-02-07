@@ -67,6 +67,8 @@ function postToTheServer(postInfo)
         });
 }
 
+
+
 function getDetails(
     id,
     name,
@@ -85,20 +87,32 @@ function getDetails(
     homepage.style.display = "none";
 
     detailsPage = document.getElementById("detailsPage");
+    detailsPage.style.dispaly = ""
 
-
-    html = `<img src="${ img }" width="300" /> 
+    html = `
+  
+  <p><button onclick="goBack()" >go back</button> </p>
+  
+  <img src="${ img }" width="300" /> 
 
         <h1>${ name }</h1>
         <p>${ strIngredient1 }</p>
-        <p>${ strIngredient2 }</p>
          <p>${ strIngredient3 }</p>
-         <p>${ strIngredient4 }</p> 
+         <p>${ strIngredient4 }</p>
          <p>${ strIngredient5 }</p>
          <p>${ strIngredient6 }</p>
          <p>${ strIngredient7 }</p>
          
          `;
-    detailsPage.innerHTML = html;
+    detailsPage.insertAdjacentHTML('beforeend', html)
+    //   detailsPage.inner = html;
     console.log();
+}
+
+
+function goBack()
+{
+    document.getElementById("homePage").style.display = "block";
+
+    document.getElementById("detailsPage").style.display = "none";
 }
