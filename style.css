@@ -2,7 +2,7 @@ body{
     background-color: rgb(238, 200, 103);
 }
 .navbar-logo{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -98,4 +98,18 @@ body{
     font-weight: 700;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+#errorMessage{
+    width: 600px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.errorMessage{
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgb(56, 83, 155);
+
 }
