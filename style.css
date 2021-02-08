@@ -20,7 +20,7 @@ body{
     outline-color: rgb(42, 52, 85);
 }
 
-#searchButton{
+.searchButton{
     border: none;
     height: 40px;
     padding: 0px 20px 0px 20px;
